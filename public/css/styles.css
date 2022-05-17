@@ -1,0 +1,174 @@
+body {
+    background-color: #655150;
+    font-family: 'Fira Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin: 5px 0 5px 0;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    padding: 0;
+}
+#logo{
+    width: 20%;
+    height: auto;
+}
+nav{
+    width: 80%;
+    height: auto;
+    background-color: white;
+    z-index: 3;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    text-align: center;
+    float: right;
+    position: relative;
+}
+ol a{
+    display:inline-block;
+    text-decoration:none;
+    color: #3e252a;
+    font-size: 23px;
+    text-align: center;
+    padding: 10px;
+}
+ol > li {
+    display: inline-block;
+    width:15%;
+    height: auto;
+    text-align: center;
+}
+ol > li:hover > a {
+    color: darkred;
+}
+ol > li:hover > ul {
+    display:block;
+    background-color:white;
+}
+ol > li > ul {
+    display:none;
+    text-align: center;
+    list-style-type:none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    width: 15%;
+    }
+ol > li > ul > li{
+    position: relative;
+    text-align: center;
+}
+ol > li > ul > li:hover {
+    background-color:beige;
+}
+ol > li > ul > li:hover > a {
+    color:darkred;
+    background-color: beige;
+}
+#admin{
+    width: 30px;
+    height: 30px;
+}
+#admin:hover{
+    opacity: 0.70;
+}
+.content{
+    width: auto;
+    height: auto;
+    color: #3e252a;
+    background-color: white;
+    /*border-radius: 10px;*/
+    margin: 5px 0 5px 0;
+    font-size: 20px;
+    padding: 30px;
+}
+h1{
+    color: darkred;
+    font-weight: bold;
+    margin: 0 0 20px 60px;
+}
+h2{
+    font-weight: bold;
+    margin: 0 0 10px 20px;
+}
+p{
+    margin: 0 0 15px 0;
+}
+.images img{
+    width: 85%;
+    height: auto;
+}
+.images {
+    width: 85%;
+    height: auto;
+    margin: auto;
+}
+.about{
+    width: auto;
+    height: auto;
+    color: #3e252a;
+    background-color: white;
+    margin: 5px 0 5px 0;
+    padding: 30px;
+    font-size: 25px;
+}
+.thanks{
+    margin: 50px 0 30px 0;
+}
+table{
+    width: 100%;
+    height: auto;
+}
+.footer{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 40px;
+}
+@media all and (max-width: 950px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    #logo{
+        width: 100%;
+        float:top;
+    }
+    nav{
+        width: 100%;
+        text-align: center;
+        float: bottom;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    ol > li{
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin: auto;
+        position: relative;
+    }
+    ol > li > ul{
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    .images img{
+        width: 100%;
+        height: auto;
+    }
+    .images {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        border-radius: 10px;
+    }
+}
